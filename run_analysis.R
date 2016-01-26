@@ -73,6 +73,6 @@ tidy_data <- aggregate(combine_data, by=list(Activity = combine_data$Activity, S
 tidy_data[,4] = NULL
 tidy_data[,3] = NULL
 
-write.table(tidy_data, "tidy_data.txt", sep="\t")
+write.table(tidy_data, "tidy_data.txt", sep="\t", row.name=FALSE)
 
 
